@@ -1,0 +1,34 @@
+{
+  "name": "agent-plugins",
+  "owner": {
+    "name": "stegbk"
+  },
+  "description": "Plugins for Claude Code and Codex. Each plugin passes a security gate before release and lists the harnesses and models it was tested on, the permissions it needs and what it must be installed with.",
+  "forceRemoveDeletedPlugins": true,
+  "plugins": [
+    {
+      "name": "docs-index",
+      "description": "Keeps a project's docs/ tree with a one-line-summary INDEX.md and an MLA BIBLIOGRAPHY.md with cited-by links.",
+      "version": "1.0.0",
+      "source": "./plugins/docs-index"
+    },
+    {
+      "name": "session-checkpoint",
+      "description": "Proves before a restart that everything the owner said and the session produced is saved where the next session reads.",
+      "version": "1.0.0",
+      "source": "./plugins/session-checkpoint"
+    },
+    {
+      "name": "ui-design-process",
+      "description": "Agent-run UI design with competing designer personas, critique, audits, judging, fusion and a studio page.",
+      "version": "1.0.0",
+      "source": "./plugins/ui-design-process"
+    },
+    {
+      "name": "word-codes",
+      "description": "Adjective-animal codes read on one screen and typed or compared on another, with the shared lists and module.",
+      "version": "1.0.0",
+      "source": "./plugins/word-codes"
+    }
+  ]
+}

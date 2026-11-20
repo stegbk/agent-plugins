@@ -1,0 +1,161 @@
+{
+  "lists": {
+    "adjectives_first": [
+      "agile",
+      "airy",
+      "alert"
+    ],
+    "adjectives_last": "zippy",
+    "animals_first": [
+      "adder",
+      "alpaca",
+      "anole"
+    ],
+    "animals_last": "zebra"
+  },
+  "from_digest": [
+    {
+      "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "pairs": 2,
+      "code": "agile-adder agile-adder"
+    },
+    {
+      "digest": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "pairs": 2,
+      "code": "zippy-zebra zippy-zebra"
+    },
+    {
+      "digest": "309a76af40ef52b5c7d2780484815822c88f019963a94213452adf6f9ea2d1ad",
+      "pairs": 2,
+      "input": "sha256 of 'word-codes test vector'",
+      "code": "cute-narwhal jaunty-pig"
+    },
+    {
+      "digest": "309a76af40ef52b5c7d2780484815822c88f019963a94213452adf6f9ea2d1ad",
+      "pairs": 1,
+      "code": "cute-narwhal"
+    },
+    {
+      "digest": "0102030405060708",
+      "pairs": 4,
+      "code": "airy-anole alpine-asp amiable-avocet arctic-baboon"
+    },
+    {
+      "digest": "309a76af40ef52b5c7d2780484815822c88f019963a94213452adf6f9ea2d1ad",
+      "pairs": 2,
+      "prefix": "ha",
+      "code": "ha-cute-narwhal jaunty-pig"
+    },
+    {
+      "digest": "309a76af40ef52b5c7d2780484815822c88f019963a94213452adf6f9ea2d1ad",
+      "pairs": 1,
+      "prefix": "ha",
+      "code": "ha-cute-narwhal"
+    }
+  ],
+  "normalize": [
+    {
+      "in": "  AGILE adder  ",
+      "out": "agile-adder"
+    },
+    {
+      "in": "agile_adder__airy-alpaca",
+      "out": "agile-adder airy-alpaca"
+    },
+    {
+      "in": "agile-adder airy-alpaca",
+      "out": "agile-adder airy-alpaca"
+    },
+    {
+      "in": "HA agile adder",
+      "out": "ha-agile-adder"
+    },
+    {
+      "in": "ha_agile_adder airy-alpaca",
+      "out": "ha-agile-adder airy-alpaca"
+    }
+  ],
+  "valid": [
+    {
+      "code": "agile-adder",
+      "valid": true
+    },
+    {
+      "code": "agile-adder",
+      "pairs": 2,
+      "valid": false
+    },
+    {
+      "code": "adder-agile",
+      "valid": false
+    },
+    {
+      "code": "agile-adder airy-alpaca",
+      "pairs": 2,
+      "valid": true
+    },
+    {
+      "code": "agile adder",
+      "valid": false
+    },
+    {
+      "code": "",
+      "valid": false
+    },
+    {
+      "code": "agile-adder-x",
+      "valid": false
+    },
+    {
+      "code": "ha-agile-adder",
+      "valid": true
+    },
+    {
+      "code": "ha-agile-adder",
+      "prefix": "ha",
+      "valid": true
+    },
+    {
+      "code": "ha-agile-adder",
+      "prefix": "dq",
+      "valid": false
+    },
+    {
+      "code": "agile-adder",
+      "prefix": "ha",
+      "valid": false
+    },
+    {
+      "code": "ha-agile-adder airy-alpaca",
+      "pairs": 2,
+      "prefix": "ha",
+      "valid": true
+    },
+    {
+      "code": "hab-agile-adder",
+      "valid": false
+    },
+    {
+      "code": "h-agile-adder",
+      "valid": false
+    }
+  ],
+  "split": [
+    {
+      "in": "ha-agile-adder airy-alpaca",
+      "prefix": "ha",
+      "pairs": "agile-adder airy-alpaca"
+    },
+    {
+      "in": "agile-adder",
+      "prefix": null,
+      "pairs": "agile-adder"
+    }
+  ],
+  "prefix_for": [
+    {
+      "project": "no-such-project",
+      "prefix": "xx"
+    }
+  ]
+}

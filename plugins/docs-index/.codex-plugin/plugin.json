@@ -1,0 +1,9 @@
+{
+  "name": "docs-index",
+  "version": "1.0.0",
+  "description": "Keeps a project's docs/ tree: research, decisions, guides and reference notes, an INDEX.md with one-line summaries and an MLA BIBLIOGRAPHY.md with citation keys and cited-by links.",
+  "author": {
+    "name": "stegbk"
+  },
+  "license": "MIT"
+}

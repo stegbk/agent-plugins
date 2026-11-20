@@ -1,0 +1,6 @@
+# docs-index configuration. Copy to ~/.config/docs-index/config.yaml (or point DOCS_INDEX_CONFIG at a copy).
+# stop_hook: what the Stop hook does when docs/ has problems.
+#   warn  - show a warning and let the turn end (default)
+#   block - ask Claude to fix the problems before it stops (once per turn)
+#   off   - do nothing
+stop_hook: warn

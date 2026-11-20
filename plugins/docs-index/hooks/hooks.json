@@ -1,0 +1,16 @@
+{
+  "description": "Optional docs/INDEX.md drift check at the end of each turn. Reads local files only; set stop_hook: off in ~/.config/docs-index/config.yaml to turn it off.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/docs_index.py\" check --hook",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

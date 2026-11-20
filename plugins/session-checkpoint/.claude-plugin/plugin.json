@@ -1,0 +1,9 @@
+{
+  "name": "session-checkpoint",
+  "version": "1.0.0",
+  "description": "Before a restart, proves that everything the owner said and the session produced is in files the next session reads: a scripted transcript digest, a read-only auditor agent, verified fixes.",
+  "author": {
+    "name": "stegbk"
+  },
+  "license": "MIT"
+}

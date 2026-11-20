@@ -1,0 +1,32 @@
+{
+  "name": "agent-plugins",
+  "interface": {
+    "displayName": "Agent plugins"
+  },
+  "plugins": [
+    {
+      "name": "docs-index",
+      "source": {
+        "source": "local",
+        "path": "./plugins/docs-index"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "documentation"
+    },
+    {
+      "name": "word-codes",
+      "source": {
+        "source": "local",
+        "path": "./plugins/word-codes"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "utilities"
+    }
+  ]
+}

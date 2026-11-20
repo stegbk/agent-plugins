@@ -1,0 +1,7 @@
+{
+  "name": "word-codes",
+  "version": "1.0.0",
+  "description": "Adjective-animal word codes (dapper-newt) that people read on one screen and type or compare on another: shared word lists and a stdlib reference module.",
+  "author": {"name": "stegbk"},
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "about": "Example two-letter source-project prefixes for word codes. Copy this file to ~/.config/word-codes/prefixes.json (or point WORD_CODES_PREFIXES at a copy) and list your own projects. Prefixes are assigned explicitly (never derived from the name) and unique. \"xx\" is reserved for a project not listed here. \"aliases\" maps other names a project goes by (repo folder, a project field in another tool) to its registered name.",
+  "reserved": {
+    "xx": "unknown project"
+  },
+  "projects": {
+    "example-app": "ea",
+    "example-cli": "ec",
+    "example-service": "es",
+    "example-tools": "et"
+  },
+  "aliases": {
+    "example_app": "example-app",
+    "example_service_api": "example-service"
+  },
+  "approved": "example data only"
+}
